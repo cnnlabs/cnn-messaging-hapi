@@ -26,4 +26,4 @@ server.register({
 });
 ```
 
-See the documentation for [cnn-messaging-hapi](http://github.com/cnnlabs/cnn-messaging-hapi) for details.
+See the documentation for [cnn-messaging](http://github.com/cnnlabs/cnn-messaging) for details.
