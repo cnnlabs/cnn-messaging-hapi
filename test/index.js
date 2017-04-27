@@ -1,6 +1,5 @@
 'use strict';
 
-const pkg = require('../package.json');
 const messengerPlugin = require('../index');
 
 const chai = require('chai');
@@ -27,8 +26,6 @@ describe('hapi plugin', function () {
             if (err) {
                 return done(err);
             }
-            server.messenger = server.plugins[pkg.name].messenger;
-            server.Message = server.plugins[pkg.name].Message;
             server.start(done);
         });
 
@@ -39,6 +36,6 @@ describe('hapi plugin', function () {
     });
 
     it('should allow messages to be published', function () {
-        return server.messenger.publish('test.topic', new server.Message({event: {some: 'thing'}}));
+        return server.app.messenger.publish('test.topic', new server.app.Message({event: {some: 'thing'}}));
     });
 });

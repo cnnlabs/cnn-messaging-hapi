@@ -26,4 +26,6 @@ server.register({
 });
 ```
 
+See tests for further usage examples.
+
 See the documentation for [cnn-messaging](http://github.com/cnnlabs/cnn-messaging) for details.

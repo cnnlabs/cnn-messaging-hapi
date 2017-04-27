@@ -6,8 +6,12 @@ const Message = require('cnn-messaging').Message;
 
 exports.register = function (server, options, next) {
     options.http = server && server.connections.length && server.connections[0] && server.connections[0].listener;
-    server.expose('messenger', new Messenger(options));
+    const messenger = new Messenger(options);
+    server.expose('messenger', messenger);
     server.expose('Message', Message);
+
+    server.app.messenger = messenger;
+    server.app.Message = Message;
 
     server.ext({
         type: 'onPreStart',
