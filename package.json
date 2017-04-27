@@ -1,0 +1,41 @@
+{
+  "name": "cnn-messaging-hapi",
+  "version": "1.0.0",
+  "description": "Wraps cnn-messaging module in a hapi plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "DEBUG='*,-mocha*' _mocha --timeout 15000",
+    "coverage": "istanbul cover _mocha -- --recursive test/ --timeout 10000"
+  },
+  "keywords": [
+    "hapi",
+    "plugin",
+    "cnn",
+    "messaging",
+    "amqp",
+    "socket.io"
+  ],
+  "author": "Ian Patton <ian.patton@turner.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cnn-messaging": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "hapi": "^16.1.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.3.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnnlabs/cnn-messaging-hapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cnnlabs/cnn-messaging-hapi/issues"
+  },
+  "homepage": "https://github.com/cnnlabs/cnn-messaging-hapi#readme"
+}
