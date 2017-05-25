@@ -1,6 +1,6 @@
 {
   "name": "cnn-messaging-hapi",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Wraps cnn-messaging module in a hapi plugin",
   "main": "index.js",
   "scripts": {
@@ -13,12 +13,12 @@
     "cnn",
     "messaging",
     "amqp",
-    "socket.io"
+    "websocket"
   ],
   "author": "Ian Patton <ian.patton@turner.com>",
   "license": "MIT",
   "dependencies": {
-    "cnn-messaging": "^1.0.0"
+    "cnn-messaging": "^2.1.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
